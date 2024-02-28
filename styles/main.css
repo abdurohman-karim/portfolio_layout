@@ -194,10 +194,11 @@ html {
 }
 .heading .container .heading__text {
   font-family: UbuntuRegular;
+  width: 600px;
   color: var(--text-blug-light);
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 20px;
   letter-spacing: -1.5%;
   text-align: left;
 }
