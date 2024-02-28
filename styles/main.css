@@ -143,6 +143,63 @@ html {
   margin-left: auto;
 }
 
+.heading {
+  width: 100%;
+  background-color: var(--light);
+  min-height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+.heading .container .heading__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.heading .container .heading__icon img {
+  width: 20px;
+}
+.heading .container .heading__title {
+  font-family: JetBrainsMonoBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -1.5%;
+  text-align: left;
+  color: var(--text-light);
+  padding: 5px 15px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.heading .container .heading__title i {
+  color: #9b9b9b;
+}
+.heading .container .heading__text {
+  font-family: UbuntuRegular;
+  color: var(--text-blug-light);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -1.5%;
+  text-align: left;
+}
+
 .header {
   position: fixed;
   width: 100%;
