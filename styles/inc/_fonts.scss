@@ -1,22 +1,74 @@
+
+// Poppins Start
 @font-face {
-    font-family: 'Poppins';
+    font-family: PoppinsBold;
     src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: PoppinsRegular;
     src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: PoppinsLight;
     src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
+// Poppins end
 
 /* Add other Poppins font variations similarly */
+
+// JetBrains Mono start
+@font-face {
+    font-family: JetBrainsMonoRegular;
+    src: url('../assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: JetBrainsMonoBold;
+    src: url('../assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+// JetBrains Mono end
+
+// Ubuntu start
+@font-face {
+    font-family: UbuntuLight;
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: UbuntuRegular;
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: UbuntuMedium;
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: UbuntuSemiBold;
+    src: url('../assets/fonts/Ubuntu/Ubuntu-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family: UbuntuBold;
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+// Ubuntu end
+
