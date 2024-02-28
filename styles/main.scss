@@ -5,7 +5,68 @@
 
 @import 'components/header';
 
-
+// hero start
+.hero{
+    width: 100%;
+    padding-top: 80px;
+    background-image: url('../assets/bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    .container{
+        @include flex(column, center, center);
+        height: 100%;
+        .hero__ellipse{
+            @include center;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),0px 7px 15px 0px rgba(0, 0, 0, 0.1),0px 27px 27px 0px rgba(0, 0, 0, 0.09),0px 61px 37px 0px rgba(0, 0, 0, 0.05),0px 109px 44px 0px rgba(0, 0, 0, 0.01),0px 170px 48px 0px rgba(0, 0, 0, 0);
+            img{
+                width: 100%;
+            }
+        }
+        .hero__author{
+            font-family: PoppinsBold;
+            color: var(--text-blug-light);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: -1.5%;
+            margin-top: 28px;
+            margin-bottom: -14px;
+        }
+        .hero__title{
+            font-family: PoppinsBold;
+            color: var(--text-dark);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: -1.5%;
+            margin-bottom: 20px;
+        }
+        .hero__button{
+            font-family: UbuntuMedium;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: -1.5%;
+            @include center;
+            width: 160px;
+            height: 45px;
+            border-radius: 8px;
+            background: linear-gradient(160.52deg, var(--primary-color) -66.429%,var(--secondary-color) 102.868%);
+            color: var(--text-light);
+            transition: 0.2s ease;
+            &:hover{
+                filter: grayscale(50%);
+            }
+        }
+    }
+}
+// hero end
 
 @import 'components/footer';
 

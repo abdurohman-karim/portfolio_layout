@@ -30,32 +30,32 @@
 
 @font-face {
   font-family: PoppinsBold;
-  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: PoppinsRegular;
-  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: PoppinsLight;
-  src: url("../assets/fonts/Poppins-Light.ttf") format("truetype");
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 /* Add other Poppins font variations similarly */
 @font-face {
   font-family: JetBrainsMonoRegular;
-  src: url("../assets/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: JetBrainsMonoBold;
-  src: url("../assets/fonts/JetBrainsMono-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -144,6 +144,7 @@ html {
 }
 
 .header {
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -164,6 +165,10 @@ html {
   line-height: 23px;
   letter-spacing: -1.5%;
   text-align: left;
+  color: var(--text-dark);
+}
+.header .container .header__logo:hover {
+  filter: grayscale(70%);
 }
 .header .container .header__logo b {
   color: var(--primary-color);
@@ -205,4 +210,74 @@ html {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -1.5%;
+}
+
+.hero {
+  width: 100%;
+  padding-top: 80px;
+  background-image: url("../assets/bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.hero .container .hero__ellipse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 7px 15px 0px rgba(0, 0, 0, 0.1), 0px 27px 27px 0px rgba(0, 0, 0, 0.09), 0px 61px 37px 0px rgba(0, 0, 0, 0.05), 0px 109px 44px 0px rgba(0, 0, 0, 0.01), 0px 170px 48px 0px rgba(0, 0, 0, 0);
+}
+.hero .container .hero__ellipse img {
+  width: 100%;
+}
+.hero .container .hero__author {
+  font-family: PoppinsBold;
+  color: var(--text-blug-light);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -1.5%;
+  margin-top: 28px;
+  margin-bottom: -14px;
+}
+.hero .container .hero__title {
+  font-family: PoppinsBold;
+  color: var(--text-dark);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -1.5%;
+  margin-bottom: 20px;
+}
+.hero .container .hero__button {
+  font-family: UbuntuMedium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+  border-radius: 8px;
+  background: linear-gradient(160.52deg, var(--primary-color) -66.429%, var(--secondary-color) 102.868%);
+  color: var(--text-light);
+  transition: 0.2s ease;
+}
+.hero .container .hero__button:hover {
+  filter: grayscale(50%);
 }/*# sourceMappingURL=main.css.map */
