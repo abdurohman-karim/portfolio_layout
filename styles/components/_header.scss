@@ -1,0 +1,54 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    backdrop-filter: blur(20px);
+    .container{
+        @include flex(row, space-between, center);
+        .header__logo{
+            font-family: UbuntuBold;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            letter-spacing: -1.5%;
+            text-align: left;
+            b{
+                color: var(--primary-color);
+            }
+        }
+        .header__nav{
+            ul{
+                @include flex(row, space-between, center);
+                gap: 35px;
+                li{
+                    a{
+                        font-family: UbuntuMedium;
+                        color: var(--text-dark);
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: -1.5%;
+                    }
+                }
+            }
+        }
+        .header__actions{
+            @include flex(row, space-between, center);
+            gap: 15px;
+            .actions__button{
+                @include center;
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                background: var(--light-blug);
+                color: var(--text-blug-dark);
+                font-family: UbuntuMedium;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: -1.5%;
+            }
+        }
+    }
+}
