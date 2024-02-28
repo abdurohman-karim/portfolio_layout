@@ -21,6 +21,8 @@ html {
     width: 100%;
     background-color: var(--light);
     min-height: 185px;
+    padding-bottom: 100px;
+    padding-top: 100px;
     @include center;
     .container{
         @include flex(column, center, flex-start);
@@ -45,7 +47,7 @@ html {
             letter-spacing: -1.5%;
             text-align: left;
             color: var(--text-light);
-            padding: 5px 15px;
+            padding: 7px 15px;
             background-color: var(--secondary-color);
             border-radius: 8px;
             margin-bottom: 15px;

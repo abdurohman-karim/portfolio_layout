@@ -10,9 +10,6 @@
     width: 100%;
     padding-top: 80px;
     background-image: url('../assets/bg.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 650px;
     .container{
         @include flex(column, center, center);
@@ -67,6 +64,141 @@
     }
 }
 // hero end
+
+// about start
+.about{
+    width: 100%;
+    background-image: url('../assets/bg.svg');
+    height: 650px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .row_4{
+            width: 100%;
+            @include grid-container(4, 20px);
+            .about__stat-card{
+                @include center;
+                width: 100%;
+                max-width: 300px;
+                height: 180px;
+                background-color: var(--light);
+                box-sizing: border-box;
+                border: 4px solid var(--light-blug);
+                border-radius: 15px;
+                overflow: hidden;
+                .stat-number{
+                    font-family: UbuntuBold;
+                    color: var(--primary-color);
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 55px;
+                    letter-spacing: -1.5%;
+                }
+                .stat-text{
+                    color: var(--text-dark);
+                    font-family: UbuntuBold;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 21px;
+                    letter-spacing: -1.5%;
+                }
+            }
+        }
+        .row_2{
+            @include grid-container(2, 20px);
+            .about__info-card{
+                display: flex;
+                flex-direction: column;
+                background-color: var(--light);
+                width: 100%;
+                max-width: 633px;
+                height: 370px;
+                box-sizing: border-box;
+                border: 4px solid var(--light-blug);
+                border-radius: 15px;
+                overflow: hidden;
+                &.ic-info{
+                    @include flex(column, center, flex-start);
+                    padding: 0 40px;
+                    .info-card__title{
+                        font-family: UbuntuBold;
+                        color: var(--text-dark);
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 23px;
+                        letter-spacing: -1.5%;
+                        margin-bottom: 16px;
+                    }
+                    .info-card__text{
+                        font-family: UbuntuRegular;
+                        color: var(--text-blug-light);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 2.5%;
+                        text-align: left;
+                    }
+                }
+                &.ic-unique{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 40px;
+                    .ic-systems{
+                        position: absolute;
+                        bottom: 0;
+                        left: 50px;
+                        display: flex;
+                        gap: 20px;
+                        .system-container{
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            flex-direction: column;
+                            gap: 10px;
+                            .system-name{
+                                font-family: UbuntuBold;
+                                color: var(--text-dark);
+                            }
+                            .system{
+                                width: 50px;
+                                border-radius: 10px 10px 0px 0px;
+                                &:hover{
+                                    filter: grayscale(40%);
+                                }
+                            }
+                            #system1{
+                                background-color: var(--primary-color);
+                                height: 150px;
+                            }
+                            #system2{
+                                background-color: var(--secondary-color);
+                                height: 200px;
+                            }
+                            #system3{
+                                background-color: var(--primary-color);
+                                height: 250px;
+                            }
+                        }
+                    }
+                    .ic-system__title{
+                        width: 275px;
+                        font-family: UbuntuBold;
+                        color: var(--text-dark);
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        letter-spacing: -2.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+// about end
 
 @import 'components/footer';
 
