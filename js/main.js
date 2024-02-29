@@ -91,4 +91,10 @@ menuToggleBtn.addEventListener('click', () => {
     header.classList.toggle('open');
 })
 
+// Preloader
+window.onload = function(){
+    let preload = document.querySelector('.preloader');
+    preload.setAttribute('style', 'display: none');
+}
+
 

@@ -56,6 +56,9 @@
                 font-weight: 700;
                 line-height: 20px;
                 letter-spacing: -1.5%;
+                outline: none;
+                border: none;
+                cursor: pointer;
                 &:last-child{
                     display: none;
                 }
