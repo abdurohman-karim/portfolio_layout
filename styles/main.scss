@@ -11,6 +11,10 @@
     padding-top: 80px;
     background-image: url('../assets/bg.svg');
     height: 650px;
+    &.dark-theme {
+        /* Specify the background image for dark theme */
+        background-image: url('../assets/bg-dark.svg');
+    }
     .container{
         @include flex(column, center, center);
         position: relative;

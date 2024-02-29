@@ -37,4 +37,22 @@
     --warning-color: #f39c12;
     --icon: #ACACAC;
 }
+
+.dark-theme {
+    --light: #030712;
+    --text-dark: #ffffff;
+    --text-blug-dark: #ACACAC;
+    --light-blug: #161B2A;
+    /* ... other variables ... */
+}
+
+.section {
+    width: 100%;
+    height: 650px;
+    background-image: url('../assets/bg.svg');
+    transition: background-image 0.3s ease; /* Optional: Add a smooth transition effect */
+    &.dark-theme {
+        background-image: url('../assets/bg-dark.svg');
+    }
+}
   

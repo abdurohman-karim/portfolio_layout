@@ -30,6 +30,24 @@
   --icon: #ACACAC;
 }
 
+.dark-theme {
+  --light: #030712;
+  --text-dark: #ffffff;
+  --text-blug-dark: #ACACAC;
+  --light-blug: #161B2A;
+  /* ... other variables ... */
+}
+
+.section {
+  width: 100%;
+  height: 650px;
+  background-image: url("../assets/bg.svg");
+  transition: background-image 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+.section.dark-theme {
+  background-image: url("../assets/bg-dark.svg");
+}
+
 @font-face {
   font-family: PoppinsBold;
   src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
@@ -136,6 +154,10 @@ html {
   box-sizing: inherit;
   list-style: none;
   text-decoration: none;
+}
+
+body {
+  background-color: var(--light);
 }
 
 .container {
@@ -298,6 +320,10 @@ html {
   padding-top: 80px;
   background-image: url("../assets/bg.svg");
   height: 650px;
+}
+.hero.dark-theme {
+  /* Specify the background image for dark theme */
+  background-image: url("../assets/bg-dark.svg");
 }
 .hero .container {
   display: flex;
