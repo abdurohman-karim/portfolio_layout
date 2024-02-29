@@ -244,5 +244,82 @@
 }
 // skilll end
 
+// projects start
+.projects{
+    width: 100%;
+    background-image: url('../assets/bg.svg');
+    height: 650px;
+    .container{
+        .projects__section{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 50px;
+            .projects__card{
+                width: 100%;
+                max-width: 400px;
+                height: 222px;
+                overflow: hidden;
+                border-radius: 20px;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .projects__pagination{
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .pagination{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .pages{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        a{
+                            display: block;
+                            font-family: UbuntuBold;
+                            color: var(--text-dark);
+                            background-color: var(--light-blug);
+                            padding: 5px 12px;
+                            &.active{
+                                background-color: var(--secondary-color);
+                                color: var(--white);
+                                border-radius: 5px;
+                                padding: 7px 12px;
+                            }
+                        }
+                        &:first-child{
+                            border-radius: 5px 0px 0px 5px;
+                            overflow: hidden;
+                        }
+                        &:last-child{
+                            border-radius: 0px 5px 5px 0px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .page-sliders{
+                    @include center;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    background-color: var(--secondary-color);
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+// projects end
+
 @import 'components/footer';
 
