@@ -200,5 +200,49 @@
 }
 // about end
 
+// skills start
+.skills{
+    width: 100%;
+    background-image: url('../assets/bg.svg');
+    height: 650px;
+    .container{
+        .skills-card{
+            position: relative;
+            padding: 40px;
+            @include flex(column, flex-start, flex-end);
+            width: 100%;
+            background-color: var(--secondary-color);
+            height: 600px;
+            overflow: hidden;
+            border-radius: 15px;
+            .skills-card__img{
+                position: absolute;
+                bottom: 0;
+                left: 40px;
+                width: 450px;
+            }
+            .skills-card__items{
+                width: 670px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 15px;
+                .item{
+                    @include center;
+                    font-family: PoppinsBold;
+                    padding: 5px 10px;
+                    background-color: var(--white);
+                    border-radius: 7px;
+                    &:hover{
+                        background-color: var(--light-blug);
+                    }
+                }
+            }
+        }
+    }
+}
+// skilll end
+
 @import 'components/footer';
 
