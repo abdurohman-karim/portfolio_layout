@@ -80,3 +80,15 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.addEventListener('click', toggleDarkMode);
     }
 });
+
+// Toggle navbar
+const menuToggleBtn = document.getElementById('menuToggle');
+const header = document.getElementById('header');
+const navMenu = document.getElementById('navMenu');
+
+menuToggleBtn.addEventListener('click', () => {
+    menuToggleBtn.classList.toggle('open');
+    header.classList.toggle('open');
+})
+
+

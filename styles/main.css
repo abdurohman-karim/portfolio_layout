@@ -232,6 +232,8 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  padding: 20px;
   height: 70px;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -299,11 +301,55 @@ body {
 .header .container .header__actions .actions__button:last-child {
   display: none;
 }
+.header.open {
+  padding: 20px;
+  height: 480px;
+}
+.header.open #navMenu {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 50px;
+}
+
+#navMenu {
+  width: 100%;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+#navMenu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#navMenu ul li {
+  width: 100%;
+}
+#navMenu ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--light-blug);
+  font-family: UbuntuBold;
+  color: var(--text-dark);
+  font-size: 22px;
+  border-radius: 15px;
+}
 
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
     max-width: 370px;
+  }
+  .header {
+    transition: 0.2s ease-in-out;
   }
   .header .container .header__nav {
     display: none;
@@ -313,6 +359,15 @@ body {
   }
   .header .container .header__actions .actions__button:last-child {
     display: flex;
+  }
+  #navMenu {
+    visibility: hidden;
+  }
+  #navMenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .hero {

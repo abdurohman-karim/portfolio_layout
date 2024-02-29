@@ -3,6 +3,8 @@
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
     height: 70px;
     backdrop-filter: blur(20px);
     z-index: 1000;
@@ -61,6 +63,41 @@
             
         }
     }
+    &.open{
+        padding: 20px;
+        height: 480px;
+        #navMenu{
+            visibility: visible;
+            opacity: 1;
+            padding-top: 50px;
+        }
+    }
+}
+
+#navMenu{
+    width: 100%;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease;
+    ul{
+        width: 100%;
+        @include flex(column, space-between, center);
+        gap: 20px;
+        li{
+            width: 100%;
+            a{
+                @include center;
+                width: 100%;
+                height: 50px;
+                background-color: var(--light-blug);
+                font-family: UbuntuBold;
+                color: var(--text-dark);
+                font-size: 22px;
+                border-radius: 15px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -69,6 +106,7 @@
         max-width: 370px;
     }
     .header{
+        transition: 0.2s ease-in-out;
         .container{
             .header__nav{
                 display: none;
@@ -81,6 +119,12 @@
                     }
                 }
             }
+        }
+    }
+    #navMenu{
+        visibility: hidden;
+        ul{
+            @include flex(column, space-between, center);
         }
     }
 }
