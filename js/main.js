@@ -1,4 +1,7 @@
+let preloader = document.querySelector('.preloader');
+
 // Function to set the initial theme based on user preference// Function to set the initial theme based on user preference
+
 function setInitialTheme() {
     const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
     const root = document.documentElement;
@@ -45,6 +48,11 @@ function toggleDarkMode() {
 
     // Update the theme toggle button icon
     updateThemeIcon(isDarkMode);
+
+    preloader.setAttribute('style', 'display: flex;');
+    setTimeout(() => {
+        preloader.setAttribute('style', 'display: none;');
+    }, 1000);
 
     // Save the user's preference to localStorage
     localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');

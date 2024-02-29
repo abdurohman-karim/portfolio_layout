@@ -115,7 +115,7 @@ body{
 
     35% {
         width: 2.5em;
-        box-shadow: 0 -0.5em var(--primary-color), 0 0.5em var(--secondary-color);
+        box-shadow: 0 -0.5em var(--secondary-color), 0 0.5em var(--secondary-color);
     }
 
     70% {
@@ -124,7 +124,7 @@ body{
     }
 
     100% {
-        box-shadow: 1em -0.5em var(--primary-color), -1em 0.5em var(--secondary-color);
+        box-shadow: 1em -0.5em var(--secondary-color), -1em 0.5em var(--secondary-color);
     }
 }
 
@@ -136,7 +136,7 @@ body{
 
     35% {
         height: 2.5em;
-        box-shadow: 0.5em 0 var(--secondary-color), -0.5em 0 var(--primary-color);
+        box-shadow: 0.5em 0 var(--primary-color), -0.5em 0 var(--primary-color);
     }
 
     70% {
@@ -145,7 +145,7 @@ body{
     }
 
     100% {
-        box-shadow: 0.5em 1em var(--secondary-color), -0.5em -1em var(--primary-color);
+        box-shadow: 0.5em 1em var(--primary-color), -0.5em -1em var(--primary-color);
     }
 }
 
