@@ -1,0 +1,31 @@
+// text shine effect 
+.shine{
+    background: linear-gradient(to right, #aaaaaa 0, #ffffff 10%, #aaaaaa 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    white-space: nowrap;
+}
+  
+    
+@keyframes shine {
+    0%{
+        background-position: 0;
+    }
+    
+    60%{
+        background-position: 90px;
+    }
+    75%{
+        background-position: 120px;
+    }
+    
+    100%{
+        background-position: 150px;
+    }
+    
+}
+  

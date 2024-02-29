@@ -13,7 +13,18 @@
     height: 650px;
     .container{
         @include flex(column, center, center);
+        position: relative;
         height: 100%;
+        .hero__banner{
+            position: absolute;
+            top: 70px;
+            left: 350px;
+            font-family: JetBrainsMonoBold;
+            color: var(--white);
+            padding: 18px 15px;
+            background-color: var(--secondary-color);
+            border-radius: 10px 10px 0px 10px;
+        }
         .hero__ellipse{
             @include center;
             width: 300px;
@@ -321,5 +332,53 @@
 }
 // projects end
 
+// questions start
+.questions{
+    width: 100%;
+    background-image: url('../assets/bg.svg');
+    height: 650px;
+    .container{
+        .questions__cards{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .questions__card{
+                width: 100%;
+                max-width: 630px;
+                height: 420px;
+                background-color: var(--light-blug);
+                border-radius: 15px;
+                overflow: hidden;
+                padding: 30px;
+                &.qc-unique{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 60px;
+                    .card__title{
+                        width: 300px;
+                        font-family: UbuntuBold;
+                        color: var(--text-dark);
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        letter-spacing: -1.5px;
+                        text-align: left;
+                    }
+                    img{
+                        position: absolute;
+                        top: 25%;
+                        right: -25%;
+                        width: 410px;
+                    }
+                }
+            }
+        }
+    }
+}
+// questions end
+
 @import 'components/footer';
+
+@import 'components/animations';
 

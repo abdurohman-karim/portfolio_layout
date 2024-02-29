@@ -285,7 +285,18 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 100%;
+}
+.hero .container .hero__banner {
+  position: absolute;
+  top: 70px;
+  left: 350px;
+  font-family: JetBrainsMonoBold;
+  color: var(--white);
+  padding: 18px 15px;
+  background-color: var(--secondary-color);
+  border-radius: 10px 10px 0px 10px;
 }
 .hero .container .hero__ellipse {
   display: flex;
@@ -603,4 +614,72 @@ html {
   cursor: pointer;
   background-color: var(--secondary-color);
   overflow: hidden;
+}
+
+.questions {
+  width: 100%;
+  background-image: url("../assets/bg.svg");
+  height: 650px;
+}
+.questions .container .questions__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.questions .container .questions__cards .questions__card {
+  width: 100%;
+  max-width: 630px;
+  height: 420px;
+  background-color: var(--light-blug);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 30px;
+}
+.questions .container .questions__cards .questions__card.qc-unique {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+.questions .container .questions__cards .questions__card.qc-unique .card__title {
+  width: 300px;
+  font-family: UbuntuBold;
+  color: var(--text-dark);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -1.5px;
+  text-align: left;
+}
+.questions .container .questions__cards .questions__card.qc-unique img {
+  position: absolute;
+  top: 25%;
+  right: -25%;
+  width: 410px;
+}
+
+.shine {
+  background: linear-gradient(to right, #aaaaaa 0, #ffffff 10%, #aaaaaa 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  white-space: nowrap;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 90px;
+  }
+  75% {
+    background-position: 120px;
+  }
+  100% {
+    background-position: 150px;
+  }
 }/*# sourceMappingURL=main.css.map */
