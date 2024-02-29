@@ -85,7 +85,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .row_4{
+        .stat_row{
             width: 100%;
             @include grid-container(4, 20px);
             .about__stat-card{
@@ -116,7 +116,7 @@
                 }
             }
         }
-        .row_2{
+        .info_row{
             @include grid-container(2, 20px);
             .about__info-card{
                 display: flex;
@@ -267,7 +267,6 @@
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
             gap: 50px;
             .projects__card{
                 width: 100%;
@@ -382,5 +381,7 @@
 
 @import 'components/footer';
 
+
+@import 'components/responsive';
 @import 'components/animations';
 

@@ -274,7 +274,25 @@ html {
   line-height: 20px;
   letter-spacing: -1.5%;
 }
+.header .container .header__actions .actions__button:last-child {
+  display: none;
+}
 
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 370px;
+  }
+  .header .container .header__nav {
+    display: none;
+  }
+  .header .container .header__actions {
+    gap: 10px;
+  }
+  .header .container .header__actions .actions__button:last-child {
+    display: flex;
+  }
+}
 .hero {
   width: 100%;
   padding-top: 80px;
@@ -363,13 +381,13 @@ html {
   flex-direction: column;
   gap: 20px;
 }
-.about .container .row_4 {
+.about .container .stat_row {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.about .container .row_4 .about__stat-card {
+.about .container .stat_row .about__stat-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -383,7 +401,7 @@ html {
   border-radius: 15px;
   overflow: hidden;
 }
-.about .container .row_4 .about__stat-card .stat-number {
+.about .container .stat_row .about__stat-card .stat-number {
   font-family: UbuntuBold;
   color: var(--primary-color);
   font-size: 48px;
@@ -391,7 +409,7 @@ html {
   line-height: 55px;
   letter-spacing: -1.5%;
 }
-.about .container .row_4 .about__stat-card .stat-text {
+.about .container .stat_row .about__stat-card .stat-text {
   color: var(--text-dark);
   font-family: UbuntuBold;
   font-size: 18px;
@@ -399,12 +417,12 @@ html {
   line-height: 21px;
   letter-spacing: -1.5%;
 }
-.about .container .row_2 {
+.about .container .info_row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.about .container .row_2 .about__info-card {
+.about .container .info_row .about__info-card {
   display: flex;
   flex-direction: column;
   background-color: var(--light);
@@ -416,14 +434,14 @@ html {
   border-radius: 15px;
   overflow: hidden;
 }
-.about .container .row_2 .about__info-card.ic-info {
+.about .container .info_row .about__info-card.ic-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 0 40px;
 }
-.about .container .row_2 .about__info-card.ic-info .info-card__title {
+.about .container .info_row .about__info-card.ic-info .info-card__title {
   font-family: UbuntuBold;
   color: var(--text-dark);
   font-size: 20px;
@@ -432,7 +450,7 @@ html {
   letter-spacing: -1.5%;
   margin-bottom: 16px;
 }
-.about .container .row_2 .about__info-card.ic-info .info-card__text {
+.about .container .info_row .about__info-card.ic-info .info-card__text {
   font-family: UbuntuRegular;
   color: var(--text-blug-light);
   font-size: 16px;
@@ -441,7 +459,7 @@ html {
   letter-spacing: 2.5%;
   text-align: left;
 }
-.about .container .row_2 .about__info-card.ic-unique {
+.about .container .info_row .about__info-card.ic-unique {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -449,45 +467,45 @@ html {
   align-items: center;
   padding: 40px;
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems {
+.about .container .info_row .about__info-card.ic-unique .ic-systems {
   position: absolute;
   bottom: 0;
   left: 50px;
   display: flex;
   gap: 20px;
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container {
+.about .container .info_row .about__info-card.ic-unique .ic-systems .system-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   gap: 10px;
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container .system-name {
+.about .container .info_row .about__info-card.ic-unique .ic-systems .system-container .system-name {
   font-family: UbuntuBold;
   color: var(--text-dark);
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container .system {
+.about .container .info_row .about__info-card.ic-unique .ic-systems .system-container .system {
   width: 50px;
   border-radius: 10px 10px 0px 0px;
   transition: 0.2s ease;
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container .system:hover {
+.about .container .info_row .about__info-card.ic-unique .ic-systems .system-container .system:hover {
   filter: grayscale(40%);
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container #system1 {
+.about .container .info_row .about__info-card.ic-unique .ic-systems .system-container #system1 {
   background-color: var(--primary-color);
   height: 150px;
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container #system2 {
+.about .container .info_row .about__info-card.ic-unique .ic-systems .system-container #system2 {
   background-color: var(--secondary-color);
   height: 200px;
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container #system3 {
+.about .container .info_row .about__info-card.ic-unique .ic-systems .system-container #system3 {
   background-color: var(--primary-color);
   height: 250px;
 }
-.about .container .row_2 .about__info-card.ic-unique .ic-system__title {
+.about .container .info_row .about__info-card.ic-unique .ic-system__title {
   width: 275px;
   font-family: UbuntuBold;
   color: var(--text-dark);
@@ -553,7 +571,6 @@ html {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 50px;
 }
 .projects .container .projects__section .projects__card {
@@ -661,6 +678,108 @@ html {
   width: 410px;
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 370px;
+  }
+  .heading .container .heading__title {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .heading .container .heading__text {
+    width: 100%;
+    max-width: 370px;
+    font-size: 12px;
+  }
+  .hero .container .hero__banner {
+    left: 0px;
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  .hero .container .hero__ellipse {
+    width: 230px;
+    height: 230px;
+  }
+  .hero .container .hero__author {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+  .hero .container .hero__title {
+    font-size: 30px;
+  }
+  .about {
+    height: auto;
+  }
+  .about .container .stat_row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .about .container .info_row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .about .container .info_row .about__info-card.ic-info .info-card__title {
+    font-size: 16px;
+  }
+  .about .container .info_row .about__info-card.ic-info .info-card__text {
+    font-size: 12px;
+  }
+  .about .container .info_row .about__info-card.ic-unique {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .about .container .info_row .about__info-card.ic-unique .ic-system__title {
+    font-size: 16px;
+  }
+  .about .container .info_row .about__info-card.ic-unique .ic-systems {
+    left: 100px;
+  }
+  .skills .container .skills-card {
+    width: 100%;
+    max-width: 370px;
+    height: 100%;
+    min-height: 700px;
+    padding: 20px;
+  }
+  .skills .container .skills-card .skills-card__img {
+    width: 250px;
+  }
+  .skills .container .skills-card .skills-card__items {
+    width: 100%;
+    gap: 7px;
+  }
+  .skills .container .skills-card .skills-card__items .item {
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+  .projects {
+    height: auto;
+  }
+  .questions {
+    height: auto;
+  }
+  .questions .container .questions__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .questions .container .questions__cards .questions__card.qc-unique .card__title {
+    font-size: 22px;
+    margin-left: -30px;
+  }
+  .questions .container .questions__cards .questions__card.qc-unique img {
+    width: 400px;
+    top: 25%;
+    right: -60%;
+  }
+}
 .shine {
   background: linear-gradient(to right, #c2c2c2 0, #ffffff 10%, #c2c2c2 20%);
   background-position: 0;

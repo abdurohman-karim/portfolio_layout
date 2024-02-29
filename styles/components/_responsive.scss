@@ -1,0 +1,128 @@
+// Smartphones
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+        max-width: 370px;
+    }
+    .heading{
+        .container{
+            .heading__title{
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+            .heading__text{
+                width: 100%;
+                max-width: 370px;
+                font-size: 12px;
+            }
+        }
+    }
+    // hero
+    .hero{
+        .container{
+            .hero__banner{
+                left: 0px;
+                padding: 7px 10px;
+                font-size: 14px;
+            }
+            .hero__ellipse{
+                width: 230px;
+                height: 230px;
+            }
+            .hero__author{
+                font-size: 18px;
+                margin-top: 10px;
+                margin-bottom: -20px;
+            }
+            .hero__title{
+                font-size: 30px;
+            }
+        }
+    }
+
+    // about
+    .about{
+        height: auto;
+        .container{
+            .stat_row{
+                @include grid-container(2, 20px);
+            }
+            .info_row{
+                @include grid-container(1, 20px);
+                .about__info-card{
+                    &.ic-info{
+                        .info-card__title{
+                            font-size: 16px;
+                        }
+                        .info-card__text{
+                            font-size: 12px;
+                        }
+                    }
+                    &.ic-unique{
+                        @include flex(column, flex-start, flex-start);
+                        .ic-system__title{
+                            font-size: 16px;
+                        }
+                        .ic-systems{
+                            left: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // skills 
+    .skills{
+        .container{
+            .skills-card{
+                width: 100%;
+                max-width: 370px;
+                height: 100%;
+                min-height: 700px;
+                padding: 20px;
+                .skills-card__img{
+                    width: 250px;
+                }
+                .skills-card__items{
+                    width: 100%;
+                    gap: 7px;
+                    
+                    .item{
+                        font-size: 12px;
+                        padding: 2px 5px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    // projects 
+    .projects{
+        height: auto;
+    }
+
+    // questions
+    .questions{
+        height: auto;
+        .container{
+            .questions__cards{
+                @include grid-container(1, 20px);
+                .questions__card{
+                    &.qc-unique{
+                        .card__title{
+                            font-size: 22px;
+                            margin-left: -30px;
+                        }
+                        img{
+                            width: 400px;
+                            top: 25%;
+                            right: -60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
