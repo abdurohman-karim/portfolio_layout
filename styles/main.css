@@ -678,6 +678,89 @@ html {
   width: 410px;
 }
 
+@media only screen and (max-width: 1350px) {
+  .container {
+    width: 100%;
+    max-width: 1140px;
+  }
+  .about .container .info_row .about__info-card.ic-unique .ic-system__title {
+    font-size: 25px;
+    width: 200px;
+    text-align: right;
+  }
+  .skills .container .skills-card {
+    padding: 25px;
+  }
+  .skills .container .skills-card .skills-card__img {
+    width: 380px;
+  }
+  .skills .container .skills-card .skills-card__items {
+    gap: 12px;
+  }
+  .projects .container .projects__section {
+    gap: 20px;
+  }
+  .projects .container .projects__section .projects__card {
+    width: 100%;
+    max-width: 365px;
+    height: 222px;
+  }
+  .questions .container .questions__cards .questions__card {
+    width: 100%;
+    max-width: 550px;
+    height: 420px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+  }
+  .hero .container .hero__banner {
+    left: 80px;
+  }
+  .about .container .info_row .about__info-card.ic-info {
+    padding: 0px 20px;
+  }
+  .about .container .info_row .about__info-card.ic-info .info-card__title {
+    font-size: 18px;
+  }
+  .about .container .info_row .about__info-card.ic-info .info-card__text {
+    font-size: 14px;
+  }
+  .about .container .info_row .about__info-card.ic-unique {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+  }
+  .about .container .info_row .about__info-card.ic-unique .ic-systems {
+    left: 120px;
+  }
+  .about .container .info_row .about__info-card.ic-unique .ic-system__title {
+    font-size: 20px;
+    text-align: left;
+  }
+  .skills .container .skills-card .skills-card__img {
+    width: 300px;
+  }
+  .skills .container .skills-card .skills-card__items {
+    width: 50%;
+  }
+  .projects {
+    height: auto;
+  }
+  .questions .container .questions__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .questions .container .questions__cards .questions__card {
+    width: 100%;
+    max-width: 850px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
@@ -762,6 +845,14 @@ html {
   .projects {
     height: auto;
   }
+  .projects .container .projects__section {
+    gap: 20px;
+  }
+  .projects .container .projects__section .projects__card {
+    width: 100%;
+    max-width: 400px;
+    height: 222px;
+  }
   .questions {
     height: auto;
   }
@@ -778,6 +869,18 @@ html {
     width: 400px;
     top: 25%;
     right: -60%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .container {
+    width: 100%;
+    max-width: 340px;
+  }
+  .questions .container .questions__cards .questions__card.qc-unique .card__title {
+    font-size: 28px;
+    margin-left: -40px;
+    width: 150px;
+    line-height: 35px;
   }
 }
 .shine {

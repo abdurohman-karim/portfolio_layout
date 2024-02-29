@@ -1,3 +1,151 @@
+@media only screen and (max-width: 1350px){
+    .container{
+        width: 100%;
+        max-width: 1140px;
+    }
+    // about 
+    .about{
+        .container{
+            .info_row{
+                .about__info-card{
+                    &.ic-unique{
+                        .ic-system__title{
+                            font-size: 25px;
+                            width: 200px;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // skills
+    .skills{
+        .container{
+            .skills-card{
+                padding: 25px;
+                .skills-card__img{
+                    width: 380px;
+                }
+                .skills-card__items{
+
+                    gap: 12px;
+                    
+                }
+            }
+        }
+    }
+
+    // projects
+    .projects{
+        .container{
+            .projects__section{
+                gap: 20px;
+                .projects__card{
+                    width: 100%;
+                    max-width: 365px;
+                    height: 222px;
+                }
+            }
+        }
+    }
+
+    // questions
+    .questions{
+        .container{
+            .questions__cards{
+                .questions__card{
+                    width: 100%;
+                    max-width: 550px;
+                    height: 420px;
+                }
+            }
+        }
+    }
+}
+
+// Tablests
+@media only screen and (max-width: 992px) {
+    .container{
+        width: 100%;
+        max-width: 750px;
+    }
+    // hero
+    .hero{
+        .container{
+            .hero__banner{
+                left: 80px;
+            }
+        }
+    }
+    // about
+    .about{
+        .container{
+            .info_row{
+                .about__info-card{
+                    &.ic-info{
+                        padding: 0px 20px;
+                        .info-card__title{
+                            font-size: 18px;
+                        }
+                        .info-card__text{
+                            font-size: 14px;
+                        }
+                    }
+                    &.ic-unique{
+                        @include flex(column, flex-start, flex-start);
+                        padding: 30px;
+                        .ic-systems{
+                            left: 120px;
+                        }
+                        .ic-system__title{
+                            font-size: 20px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // skills
+    .skills{
+        .container{
+            .skills-card{
+                .skills-card__img{
+                    width: 300px;
+                }
+                .skills-card__items{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    // projects
+    .projects{
+        height: auto;
+    }
+
+    // questions
+    .questions{
+        .container{
+            .questions__cards{
+                @include grid-container(1, 20px);
+                .questions__card{
+                    width: 100%;
+                    max-width: 850px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
 // Smartphones
 @media only screen and (max-width: 600px){
     .container{
@@ -101,6 +249,16 @@
     // projects 
     .projects{
         height: auto;
+        .container{
+            .projects__section{
+                gap: 20px;
+                .projects__card{
+                    width: 100%;
+                    max-width: 400px;
+                    height: 222px;
+                }
+            }
+        }
     }
 
     // questions
@@ -119,6 +277,29 @@
                             width: 400px;
                             top: 25%;
                             right: -60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .container{
+        width: 100%;
+        max-width: 340px;
+    }
+    .questions{
+        .container{
+            .questions__cards{
+                .questions__card{
+                    &.qc-unique{
+                        .card__title{
+                            font-size: 28px;
+                            margin-left: -40px;
+                            width: 150px;
+                            line-height: 35px;
                         }
                     }
                 }
