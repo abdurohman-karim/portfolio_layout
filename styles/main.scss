@@ -42,7 +42,7 @@
             font-size: 24px;
             font-weight: 600;
             line-height: 36px;
-            letter-spacing: -1.5%;
+            letter-spacing: -1px;
             margin-top: 28px;
             margin-bottom: -14px;
         }
@@ -52,7 +52,7 @@
             font-size: 40px;
             font-weight: 700;
             line-height: 60px;
-            letter-spacing: -1.5%;
+            letter-spacing: -1.5px;
             margin-bottom: 20px;
         }
         .hero__button{
@@ -177,6 +177,7 @@
                             .system{
                                 width: 50px;
                                 border-radius: 10px 10px 0px 0px;
+                                transition: 0.2s ease;
                                 &:hover{
                                     filter: grayscale(40%);
                                 }
@@ -245,6 +246,7 @@
                     padding: 5px 10px;
                     background-color: var(--white);
                     border-radius: 7px;
+                    color: var(--secondary-color);
                     &:hover{
                         background-color: var(--light-blug);
                     }

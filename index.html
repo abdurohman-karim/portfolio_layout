@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/portfolio.png">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/animate.min.css">
     <title>Abdurohman Karim</title>
 </head>
 <body>
@@ -38,13 +39,15 @@
     <div class="hero">
         <div class="container">
             <div class="hero__banner">
-                <p class="shine">echo <i>"Welcome!"</i>;</p>
+                <p>echo <i class="shine">"Welcome!"</i>;</p>
             </div>
             <div class="hero__ellipse">
                 <img src="./assets/ellipse.png">
             </div>
             <p class="hero__author">Abdurohman Karim</p>
-            <p class="hero__title">Full Stack Developer</p>
+            <p class="hero__title job">
+                <span aria-hidden="true"></span>
+            </p>
             <a href="#" class="hero__button">Apply</a>
         </div>
     </div>
@@ -96,15 +99,15 @@
                     <div class="ic-systems">
                         <div class="system-container">
                             <p class="system-name">CMS</p>
-                            <a href="#" class="system" id="system1"></a>
+                            <a href="#" class="system wow" id="system1"></a>
                         </div>
                         <div class="system-container">
                             <p class="system-name">CRM</p>
-                            <a href="#" class="system" id="system2"></a>
+                            <a href="#" class="system wow" id="system2"></a>
                         </div>
                         <div class="system-container">
                             <p class="system-name">ERP</p>
-                            <a href="#" class="system" id="system3"></a>
+                            <a href="#" class="system wow" id="system3"></a>
                         </div>
                     </div>
                     <p class="ic-system__title">Control System and Static Websites, with us!</p>
@@ -185,24 +188,24 @@
     <div class="projects">
         <div class="container">
             <div class="projects__section">
-                <div class="projects__card">
+                <a href="#" class="projects__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                     <img src="./assets/project.png" class="projects__img">
-                </div>
-                <div class="projects__card">
+                </a>
+                <a href="#" class="projects__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                     <img src="./assets/project.png" class="projects__img">
-                </div>
-                <div class="projects__card">
+                </a>
+                <a href="#" class="projects__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                     <img src="./assets/project.png" class="projects__img">
-                </div>
-                <div class="projects__card">
+                </a>
+                <a href="#" class="projects__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                     <img src="./assets/project.png" class="projects__img">
-                </div>
-                <div class="projects__card">
+                </a>
+                <a href="#" class="projects__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                     <img src="./assets/project.png" class="projects__img">
-                </div>
-                <div class="projects__card">
+                </a>
+                <a href="#" class="projects__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                     <img src="./assets/project.png" class="projects__img">
-                </div>
+                </a>
             </div>
             <div class="projects__pagination">
                 <div class="pagination">
@@ -262,5 +265,14 @@
         </div>
     </div>
     <!-- questions end -->
+
+    
+    <script src="./js/tilt.js"></script>
+    <script src="./js/typewrite.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

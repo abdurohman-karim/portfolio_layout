@@ -21,6 +21,7 @@
   --light-blug: #E8E8E8;
   --dark-blug: #161B2A;
   --white: #ffffff;
+  --black: #030712;
   /* Additional Colors */
   --success-color: #4caf50;
   --error-color: #e74c3c;
@@ -318,7 +319,7 @@ html {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
-  letter-spacing: -1.5%;
+  letter-spacing: -1px;
   margin-top: 28px;
   margin-bottom: -14px;
 }
@@ -328,7 +329,7 @@ html {
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: -1.5%;
+  letter-spacing: -1.5px;
   margin-bottom: 20px;
 }
 .hero .container .hero__button {
@@ -469,6 +470,7 @@ html {
 .about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container .system {
   width: 50px;
   border-radius: 10px 10px 0px 0px;
+  transition: 0.2s ease;
 }
 .about .container .row_2 .about__info-card.ic-unique .ic-systems .system-container .system:hover {
   filter: grayscale(40%);
@@ -536,6 +538,7 @@ html {
   padding: 5px 10px;
   background-color: var(--white);
   border-radius: 7px;
+  color: var(--secondary-color);
 }
 .skills .container .skills-card .skills-card__items .item:hover {
   background-color: var(--light-blug);
@@ -659,7 +662,7 @@ html {
 }
 
 .shine {
-  background: linear-gradient(to right, #aaaaaa 0, #ffffff 10%, #aaaaaa 20%);
+  background: linear-gradient(to right, #c2c2c2 0, #ffffff 10%, #c2c2c2 20%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -673,13 +676,61 @@ html {
   0% {
     background-position: 0;
   }
-  60% {
-    background-position: 90px;
-  }
-  75% {
-    background-position: 120px;
+  50% {
+    background-position: 50px;
   }
   100% {
-    background-position: 150px;
+    background-position: 100px;
+  }
+}
+#system1 {
+  animation: grow_up1 1.1s ease;
+}
+#system1:hover {
+  transform: scale(1.02);
+}
+
+#system2 {
+  animation: grow_up2 1.3s ease;
+}
+#system2:hover {
+  transform: scale(1.02);
+}
+
+#system3 {
+  animation: grow_up3 1.5s ease;
+}
+#system3:hover {
+  transform: scale(1.02);
+}
+
+@keyframes grow_up1 {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 150px;
+    opacity: 1;
+  }
+}
+@keyframes grow_up2 {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 200px;
+    opacity: 1;
+  }
+}
+@keyframes grow_up3 {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 250px;
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
