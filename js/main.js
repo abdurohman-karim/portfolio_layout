@@ -93,11 +93,19 @@ document.addEventListener('DOMContentLoaded', () => {
 const menuToggleBtn = document.getElementById('menuToggle');
 const header = document.getElementById('header');
 const navMenu = document.getElementById('navMenu');
+const navLinks = document.querySelectorAll('.navMenu__link');
 
 menuToggleBtn.addEventListener('click', () => {
+    
     menuToggleBtn.classList.toggle('open');
     header.classList.toggle('open');
+    for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener('click', () => {
+            header.classList.remove('open');
+        })
+    }
 })
+
 
 // Preloader
 window.onload = function(){
